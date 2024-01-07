@@ -1,0 +1,13 @@
+welcome: Welcome to the ice cream shop. What is your name?
+
+hello: <speak> 
+            <amazon:emotion name="excited" intensity="medium">
+            Hello {{username}}, pleasure to meet you!
+            </amazon:emotion>
+          </speak>
+
+hello_no_name: <speak> 
+                                <amazon:emotion name="excited" intensity="medium">
+                                Hello, how can I help you?
+                                </amazon:emotion>
+                               </speak>
