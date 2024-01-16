@@ -22,7 +22,7 @@ __set_seed: !apply:torch.manual_seed [!ref <seed>]
 # Reading data from the local disk of the compute node (e.g. $SLURM_TMPDIR with SLURM-based clusters) is very important.
 # It allows you to read the data much faster without slowing down the shared filesystem.
 
-data_folder: ./data # In this case, data will be automatically downloaded here.
+data_folder: ./content/data # In this case, data will be automatically downloaded here.
 data_folder_rirs: !ref <data_folder> # noise/ris dataset will automatically be downloaded here
 output_folder: !ref results/CRDNN_BPE_960h_LM/<seed>
 wer_file: !ref <output_folder>/wer.txt
@@ -51,7 +51,7 @@ train_logger: !new:speechbrain.utils.train_logger.FileTrainLogger
 # Training parameters
 number_of_epochs: 2
 number_of_ctc_epochs: 1
-batch_size: 5
+batch_size: 4
 lr: 1.0
 ctc_weight: 0.5
 sorting: ascending

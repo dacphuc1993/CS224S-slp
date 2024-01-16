@@ -6,9 +6,9 @@
 # Authors:  Ju-Chieh Chou, Mirco Ravanelli, Abdel Heba, Peter Plantinga 2020
 # ############################################################################
 
-ckptdir: /content/results/CRDNN_BPE_960h_LM/2602/save/CKPT+2022-05-03+02-52-21+00
+ckptdir: ./results/CRDNN_BPE_960h_LM/2602/save/CKPT+2024-01-16+00-15-45+00
 # savedir: /content/tmp
-savedir: /content/results/CRDNN_BPE_960h_LM/2602/save
+savedir: ./results/CRDNN_BPE_960h_LM/2602/save
 
 # Feature parameters
 sample_rate: 16000
